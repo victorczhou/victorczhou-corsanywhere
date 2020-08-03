@@ -10,7 +10,7 @@ var port = process.env.PORT || 8080;
 
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
-var originWhitelist = parseEnvList("http://api.openweathermap.org/");
+var originWhitelist = []
 function parseEnvList(env) {
   if (!env) {
     return [];
